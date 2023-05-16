@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="styls.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<body>
+    <header class="header">
+        <a href="#" class="Logo"><span>Motor</span>Cycle</a>
+        <nav class="navbar ">
+            <a href="#home">home</a>
+            <a href="#motor">motor</a>
+            <a href="#services">services</a>
+            <a href="#featured">featured</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <h1>Fint Your MotorCycle</h1>
+        <img src="https://img.inews.co.id/media/822/files/inews_new/2020/08/18/17___Honda.jpg"alt="">
+        <a href="#" class="btn">explore MotorCycle</a>
+    </section>
+    <!-- End of Home -->
+    <section class="motorCycle" id="motor">
+        <h1 class="heading">popular<span>motorCycle</span></h1>
+        <div class="swiper-container motor-slider">
+            <div class="swiper-wrapper wrapper">
+              <div class="swiper-slide box">
+                <img src="https://www.mitsukoshishop.ph/attachments/shop_images/1676267022/1.JPG"atl="">
+                 <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"><span>price : </span>$2500/-</div>
+                    <p>
+                        new
+                        <span class="fa fa-circle"></span>2023
+                        <span class="fa fa-circle"></span>automatic
+                        <span class="fa fa-circle"></span>petrol
+                        <span class="fa fa-circle"></span>2000mah
+                    </p>
+                </div>
+             </div>
+             <div class="swiper-slide box">
+                <img src="https://www.mitsukoshishop.ph/attachments/shop_images/1676267022/1.JPG"atl="">
+                 <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"><span>price : </span>$2500/-</div>
+                    <p>
+                        new
+                        <span class="fa fa-circle"></span>2023
+                        <span class="fa fa-circle"></span>automatic
+                        <span class="fa fa-circle"></span>petrol
+                        <span class="fa fa-circle"></span>2000mah
+                    </p>
+                </div>
+             </div>
+             <div class="swiper-slide box">
+                <img src="https://www.mitsukoshishop.ph/attachments/shop_images/1676267022/1.JPG"atl="">
+                 <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"><span>price : </span>$2500/-</div>
+                    <p>
+                        new
+                        <span class="fa fa-circle"></span>2023
+                        <span class="fa fa-circle"></span>automatic
+                        <span class="fa fa-circle"></span>petrol
+                        <span class="fa fa-circle"></span>2000mah
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+</body>
+</html>
+<script src="swiper/js/swiper.min.js"></script>
+<script>
+    var swiper= new Swiper('.swiper-container',{
+        pagination:{
+            el: '.swiper-pagination',
+            clickable:true,
+            renderBullet: function(index,className){
+                return '<span class="' + className + '">'+(index+1)+'</span>';
+            },
+        },
+    });
+</script>

@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'irem_sans_medi';
+    src: url('../Fonts/irem_sans_medi.woff') format('woff');
+}
+:root{
+    --border:1rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+*{
+    font-family:iran_sans_light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 2s linear;
+}
+html{
+    font-size: 62%;
+    overflow-x:hidden ;
+    scroll-behavior: smooth;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 9%;
+}
+.header .Logo{
+    font-size: 2.5rem;
+    color:orangered;
+    font-weight: bold;
+}
+.header .Logo span{
+    color:#000 ;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin:0 1rem ;
+    color: #000;
+}
+.header .navbar a:hover{
+    color: orangered;
+}
+section{
+    padding-top: 2rem 2%;
+}
+.home{
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x:hidden ;
+}
+.home h1{
+    padding-top: 10.5vw;
+    text-transform: uppercase;
+    color: #000;
+}
+.home img{
+    width: 100%;
+    margin-top: -250px;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: yellowgreen;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+/* End of Home*/
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    color: #000;
+}
+.heading span{
+    position: relative;
+    z-index: 0;
+    color: orangered;
+}
+.motorCycle{
+    background: #eee;
+}
+.motorCycle .motor-slider{
+    padding-bottom: 5rem;
+}
+.motorCycle .motor-slider .box{
+    text-align: center;
+    width: 30rem;
+}
+.motorCycle .motor-slider .box img{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transform: scale(.8);
+}
+.motorCycle .motor-slider .box .content{
+    padding-top: 1rem;
+    transform: scale(1);
+}
+.motorCycle .motor-slider .box .content h3{
+    font-size: 2rem;
+    color: #000
+}
+.motorCycle .motor-slider .box .content .price{
+    font-size: 2.5rem;
+    color: yellowgreen;
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+.motorCycle .motor-slider .box .content .price span{
+    font-size:1.7rem ;
+    color: orangered;
+    font-weight: normal;
+}
+.motorCycle .motor-slider .box .content p{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: var(--border);
+    color: yellowgreen;
+}
+.motorCycle .motor-slider .box .content p span{
+    color: orangered;
+    font-size: .8rem;
+    padding: 0 .5rem;
+}
